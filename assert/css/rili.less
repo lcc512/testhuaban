@@ -1,0 +1,81 @@
+body{
+  font-family: "Microsoft YaHei UI";
+}
+td{
+
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+}
+.header {
+  padding: 20px 15px;
+  background-color: #7386e6;
+  a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+
+  }
+  .monthTitle {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    span {
+      color: #fff;
+      font-size: 18px;
+    }
+  }
+}
+
+.content {
+  width: 100%;
+  background-color: #7386e6;
+  padding: 24px 10px;
+  .monthContent {
+    width: 100%;
+    color: #fff;
+    td {
+      width: 14.2%;
+      //height: 14.2%;
+      line-height: 35px;
+      text-align: center;
+      &.active{
+        background:url("../images/bacc.png") no-repeat 60%;
+        background-size: contain;
+      }
+    }
+  }
+}
+
+.renwu{
+  padding: 25px 15px;
+  ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li{
+      position: relative;
+      span{
+        font-size: 32px;
+        position: absolute;
+        top: 0;
+        text-align: center;
+        padding: 10px;
+      }
+      .renwu-left{
+        position: absolute;
+        left: 0;
+
+      }
+      .renwu-right{
+        right: 0;
+
+      }
+      .renwuinfo{
+        width: 100%;
+        padding: 0 60px;
+      }
+    }
+  }
+}
