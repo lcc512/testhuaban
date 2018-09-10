@@ -20,7 +20,7 @@ body {
   font-size: 56px;
 }
 .tq-list {
-  padding: 40px;
+  padding: 20px 40px;
   position: relative;
 }
 .tq-list .active-point {
