@@ -40,16 +40,16 @@
 
   ;(function () {
 
-    var $tq_list=$('.tq-list ul')
-    
-    
+    var $tq_list = $('.tq-list ul')
+
+
     function setActivePoint() {
       var $li = $('.tq-list li').eq(0)
 
 
       $('.active-point').css({
         left: $li.offset().left - 20,
-        top: $li.offset().top - $li.offsetParent().offset().top + ($li.outerHeight() / 2)+5
+        top: $li.offset().top - $li.offsetParent().offset().top + ($li.outerHeight() / 2) + 5
       }).show(1000)
 
     }
@@ -59,20 +59,19 @@
 
       var tt = data['HeWeather5'][0]['daily_forecast']
 
-      var days=['今天','明天','后天']
+      var days = ['今天', '明天', '后天']
 
-      tt.forEach(function (item,index) {
+      tt.forEach(function (item, index) {
 
-        var liTemp=$('<li><div class="list-week">\n' +
-          '        <span class="">'+days[index]+'</span>\n' +
+        var liTemp = $('<li><div class="list-week">\n' +
+          '        <span class="">' + days[index] + '</span>\n' +
           '      </div>\n' +
           '      <div class="list-temp">\n' +
-          '        <span class="nums">'+item['tmp']['min']+'~'+item['tmp']['max']+'°</span>\n' +
-          '        <span class="tianqi">'+item['cond']['txt_n']+'</span>\n' +
+          '        <span class="nums">' + item['tmp']['min'] + '~' + item['tmp']['max'] + '°</span>\n' +
+          '        <span class="tianqi">' + item['cond']['txt_n'] + '</span>\n' +
           '      </div></li>')
 
         $tq_list.append(liTemp)
-
 
 
       })
