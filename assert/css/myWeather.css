@@ -19,8 +19,29 @@ body {
   text-indent: 5px;
   font-size: 56px;
 }
+.tq-banner .addCity {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 10px;
+}
+.tq-banner .addCity a {
+  display: block;
+  text-decoration: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 1px solid #ccc;
+  line-height: 50px;
+  color: #fff;
+  transition: 0.2s all;
+}
+.tq-banner .addCity a:active {
+  background-color: #fff;
+  color: #5197e1;
+}
 .tq-list {
-  padding: 20px 40px;
+  padding: 20px 20px 20px 40px;
   position: relative;
 }
 .tq-list .active-point {
@@ -50,5 +71,14 @@ body {
 }
 .tq-list ul li .list-temp {
   float: right;
+}
+.tq-list ul li span {
+  display: inline-block;
+  padding: 0 5px;
+}
+.tq-list ul li span.iconfont {
+  font-size: 20px;
+  font-weight: bolder;
+  color: #5197e1;
 }
 /*# sourceMappingURL=myWeather.css.map */

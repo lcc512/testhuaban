@@ -1,5 +1,9 @@
+@mainColor:#5197e1;
+
+
 body {
   font-family: "Microsoft YaHei UI",sans-serif;
+
 }
 
 .tq-banner {
@@ -25,16 +29,43 @@ body {
     font-size: 56px;
   }
 
+
+  //地区按钮
+
+  .addCity{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px;
+
+    a{
+      display: block;
+      text-decoration: none;
+      width: 50px;
+      height: 50px;
+      border-radius: 100%;
+      border: 1px solid #ccc;
+      line-height: 50px;
+      color: #fff;
+      transition: 0.2s all;
+      &:active{
+
+        background-color: #fff;
+        color: @mainColor;
+        
+      }
+    }
+  }
 }
 
 .tq-list {
-  padding: 20px 40px;
+  padding: 20px 20px 20px 40px;
   position: relative;
   .active-point {
     display: none;
     width: 10px;
     height: 10px;
-    background-color: #5197e1;
+    background-color: @mainColor;
     border-radius: 100%;
     position: absolute;
     left: 0;
@@ -58,6 +89,16 @@ body {
       }
       .list-temp {
         float: right;
+      }
+
+      span{
+        display: inline-block;
+        padding: 0 5px;
+        &.iconfont{
+          font-size: 20px;
+          font-weight: bolder;
+          color: @mainColor;
+        }
       }
 
       transition: 0.5s all;
