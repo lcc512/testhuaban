@@ -64,11 +64,12 @@ body {
   border-radius: 100%;
   border: 1px solid #ccc;
   margin-bottom: 10px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   line-height: 44px;
   color: #fff;
-  transition: 0.2s all;
+  transition: 0.3s all;
 }
-.tq-banner .addCity a:active {
+.tq-banner .addCity a.active {
   background-color: #fff;
   color: #5197e1;
 }

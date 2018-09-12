@@ -20,20 +20,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="myWeather.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="myWeather.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myWeather.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="166" column="17" selection-start-line="166" selection-start-column="17" selection-end-line="166" selection-end-column="17" />
+            <state relative-caret-position="1014">
+              <caret line="160" column="18" selection-start-line="160" selection-start-column="18" selection-end-line="160" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="myWeather.less" pinned="false" current-in-tab="false">
+      <file leaf-file-name="myWeather.less" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assert/css/myWeather.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="17" column="14" lean-forward="true" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+            <state relative-caret-position="328">
+              <caret line="59" column="18" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="18" />
               <folding>
                 <element signature="e#1022#1217#0" />
               </folding>
@@ -61,8 +61,8 @@
         <option value="$PROJECT_DIR$/assert/css/rili.less" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/assert/css/myWeather.less" />
         <option value="$PROJECT_DIR$/myWeather.html" />
+        <option value="$PROJECT_DIR$/assert/css/myWeather.less" />
       </list>
     </option>
   </component>
@@ -117,6 +117,13 @@
               <item name="personalWeb" type="462c0819:PsiDirectoryNode" />
               <item name="assert" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="personalWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="personalWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="assert" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="myWeather.less" type="620a8d5e:NestingTreeNode" />
             </path>
           </expand>
           <select />
@@ -187,7 +194,7 @@
       <workItem from="1536652729139" duration="137000" />
       <workItem from="1536652895471" duration="441000" />
       <workItem from="1536718244670" duration="341000" />
-      <workItem from="1536718607698" duration="6225000" />
+      <workItem from="1536718607698" duration="7297000" />
     </task>
     <task id="LOCAL-00001" summary="缩小banner高度">
       <created>1536626513063</created>
@@ -231,17 +238,24 @@
       <option name="project" value="LOCAL" />
       <updated>1536722829328</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="1，整理代码，去除多余引用，去除bootstrape引用，做了相应调整">
+      <created>1536740827754</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1536740827754</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15633000" />
+    <option name="totallyTimeSpent" value="16705000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="583" y="0" width="1024" height="867" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.2980063" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.29716024" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -272,7 +286,8 @@
     <MESSAGE value="1.add weather-icon&#10;2.add select city button" />
     <MESSAGE value="1.aliicon 链接加上http" />
     <MESSAGE value="1.加上了每小时天气" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.加上了每小时天气" />
+    <MESSAGE value="1，整理代码，去除多余引用，去除bootstrape引用，做了相应调整" />
+    <option name="LAST_COMMIT_MESSAGE" value="1，整理代码，去除多余引用，去除bootstrape引用，做了相应调整" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
@@ -509,20 +524,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assert/css/myWeather.less">
+    <entry file="file://$PROJECT_DIR$/assert/css/myWeather.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="17" column="14" lean-forward="true" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
-          <folding>
-            <element signature="e#1022#1217#0" />
-          </folding>
+        <state relative-caret-position="-3111">
+          <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/myWeather.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="166" column="17" selection-start-line="166" selection-start-column="17" selection-end-line="166" selection-end-column="17" />
+        <state relative-caret-position="1014">
+          <caret line="160" column="18" selection-start-line="160" selection-start-column="18" selection-end-line="160" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assert/css/myWeather.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="59" column="18" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="18" />
+          <folding>
+            <element signature="e#1022#1217#0" />
+          </folding>
         </state>
       </provider>
     </entry>

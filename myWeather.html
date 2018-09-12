@@ -148,13 +148,18 @@
 
 
     // 获取天气数据方法
-    function getWeatherData(cityName) {
+    function getWeatherData(ele) {
 
+      var cityName=ele.html().trim()
       // 如果点击的是当前地区，不执行
       if (cityName == $('.location').html().trim()) {
         console.log(0)
         return
       }
+
+      ele.parent().children().removeClass('active')
+      ele.addClass('active')
+
 
       var url = 'https://free-api.heweather.com/v5/weather?city=' + cityName + '&key=b7e13790348846feb206d08509a1d78b'
       $.ajax({
@@ -172,11 +177,11 @@
       })
     }
 
-    getWeatherData('天津')
+    getWeatherData($('.addCity a').eq(1))
 
     $('.addCity').delegate('a', 'click', function () {
 
-      getWeatherData($(this).html().trim())
+      getWeatherData($(this))
     })
 
   }())
