@@ -4,6 +4,8 @@
 body {
   font-family: "Microsoft YaHei UI",sans-serif;
 
+  width: 100%;
+  height: 100%;
 }
 
 .tq-banner {
@@ -41,11 +43,11 @@ body {
     a{
       display: block;
       text-decoration: none;
-      width: 50px;
-      height: 50px;
+      width: 44px;
+      height: 44px;
       border-radius: 100%;
       border: 1px solid #ccc;
-      line-height: 50px;
+      line-height: 44px;
       color: #fff;
       transition: 0.2s all;
       &:active{
@@ -59,8 +61,9 @@ body {
 }
 
 .tq-list {
-  padding: 20px 20px 20px 40px;
+  padding: 20px;
   position: relative;
+
   .active-point {
     display: none;
     width: 10px;
@@ -74,7 +77,53 @@ body {
     transition: 0.5s all;
 
   }
-  ul {
+
+  .hourlyDiv{
+    width: 100%;
+    overflow: auto;
+    .hourlyWeahter{
+      position: relative;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: none;
+      width: 700px;
+      li {
+        float: left;
+        width: 80px;
+        font-size: 16px;
+
+        .list-week {
+          width: 100%;
+          float: left;
+          margin: 0 auto;
+        }
+        .list-temp {
+          width: 100%;
+          float: right;
+        }
+
+        span{
+          text-align: center;
+          display: block;
+          padding: 3px 0;
+
+          &.iconfont{
+            font-size: 20px;
+            font-weight: bolder;
+            color: @mainColor;
+          }
+        }
+
+        transition: 0.5s all;
+
+      }
+    }
+  }
+
+
+
+  .dailyWeather {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -92,8 +141,9 @@ body {
       }
 
       span{
+        text-align: left;
         display: inline-block;
-        padding: 0 5px;
+        padding-left: 10px;
         &.iconfont{
           font-size: 20px;
           font-weight: bolder;

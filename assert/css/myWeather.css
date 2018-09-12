@@ -1,5 +1,7 @@
 body {
   font-family: "Microsoft YaHei UI", sans-serif;
+  width: 100%;
+  height: 100%;
 }
 .tq-banner {
   width: 100%;
@@ -28,11 +30,11 @@ body {
 .tq-banner .addCity a {
   display: block;
   text-decoration: none;
-  width: 50px;
-  height: 50px;
+  width: 44px;
+  height: 44px;
   border-radius: 100%;
   border: 1px solid #ccc;
-  line-height: 50px;
+  line-height: 44px;
   color: #fff;
   transition: 0.2s all;
 }
@@ -41,7 +43,7 @@ body {
   color: #5197e1;
 }
 .tq-list {
-  padding: 20px 20px 20px 40px;
+  padding: 20px;
   position: relative;
 }
 .tq-list .active-point {
@@ -55,28 +57,66 @@ body {
   top: 0;
   transition: 0.5s all;
 }
-.tq-list ul {
+.tq-list .hourlyDiv {
+  width: 100%;
+  overflow: auto;
+}
+.tq-list .hourlyDiv .hourlyWeahter {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: none;
+  width: 700px;
+}
+.tq-list .hourlyDiv .hourlyWeahter li {
+  float: left;
+  width: 80px;
+  font-size: 16px;
+  transition: 0.5s all;
+}
+.tq-list .hourlyDiv .hourlyWeahter li .list-week {
+  width: 100%;
+  float: left;
+  margin: 0 auto;
+}
+.tq-list .hourlyDiv .hourlyWeahter li .list-temp {
+  width: 100%;
+  float: right;
+}
+.tq-list .hourlyDiv .hourlyWeahter li span {
+  text-align: center;
+  display: block;
+  padding: 3px 0;
+}
+.tq-list .hourlyDiv .hourlyWeahter li span.iconfont {
+  font-size: 20px;
+  font-weight: bolder;
+  color: #5197e1;
+}
+.tq-list .dailyWeather {
   margin: 0;
   padding: 0;
   list-style: none;
   display: none;
 }
-.tq-list ul li {
+.tq-list .dailyWeather li {
   padding: 25px 0;
   font-size: 16px;
   transition: 0.5s all;
 }
-.tq-list ul li .list-week {
+.tq-list .dailyWeather li .list-week {
   float: left;
 }
-.tq-list ul li .list-temp {
+.tq-list .dailyWeather li .list-temp {
   float: right;
 }
-.tq-list ul li span {
+.tq-list .dailyWeather li span {
+  text-align: left;
   display: inline-block;
-  padding: 0 5px;
+  padding-left: 10px;
 }
-.tq-list ul li span.iconfont {
+.tq-list .dailyWeather li span.iconfont {
   font-size: 20px;
   font-weight: bolder;
   color: #5197e1;

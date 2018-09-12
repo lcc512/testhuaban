@@ -36,71 +36,123 @@
 <!--下面列表-->
 <div class="tq-list">
   <span class="active-point"></span>
-  <ul>
+
+
+  <div class="hourlyDiv">
+    <ul class="hourlyWeahter clearfix">
+
+    </ul>
+  </div>
+
+
+
+
+
+  <ul class="dailyWeather">
 
   </ul>
 </div>
 
 
 <script src="assert/plugins/js/jquery-1.12.4.min.js"></script>
+<!--<script src="assert/plugins/js/iscroll.js"></script>-->
 <!--<script src="assert/plugins/js/zeptp.js"></script>-->
 <!--<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>-->
 <!--<script src="assert/js/wow.min.js"></script>-->
 <script>
 
+  // new IScroll(document.querySelector('#wrapper'));
+
   ;(function () {
 
     // 获得列表ul
-    var $tq_list = $('.tq-list ul')
+    var $tq_list = $('.tq-list .dailyWeather')
+    var $tq_listHourly = $('.tq-list .hourlyWeahter')
 
     // 设置小蓝点定位--临时
-    function setActivePoint() {
-
-      var $li = $('.tq-list li').eq(0)
-      $('.active-point').css({
-        left: $li.offset().left - 20,
-        top: $li.offset().top - $li.offsetParent().offset().top + ($li.outerHeight() / 2) + 5
-      }).show(1000)
-    }
+    // function setActivePoint() {
+    //
+    //   var $li = $('.tq-list .dailyWeather li').eq(0)
+    //   $('.active-point').css({
+    //     left: $li.offset().left - 20,
+    //     top: $li.offset().top - $li.offsetParent().offset().top + ($li.outerHeight() / 2) + 5
+    //   }).show(1000)
+    // }
 
 
     // 渲染列表方法
     function setWeatherList(data) {
 
       // 刷新前--清空，初始化
-      $tq_list.css('display','none')
+      $tq_list.css('display', 'none')
       $tq_list.empty()
+      $tq_listHourly.css('display', 'none')
+      $tq_listHourly.empty()
+
 
       //界面banner元素渲染
-      var weatherBanner=data['HeWeather5'][0]['now']
+      var weatherBanner = data['HeWeather5'][0]['now']
 
       $('.location').html(data['HeWeather5'][0]['basic']['city'])
       $('.main').html(weatherBanner['cond']['txt'])
-      $('.temp').html(weatherBanner['tmp']+'°')
-      $('.qlty').html('空气质量: '+data['HeWeather5'][0]['aqi']['city']['qlty'])
-      $('.wind').html(weatherBanner['wind']['dir']+' '+weatherBanner['wind']['sc']+'级')
+      $('.temp').html(weatherBanner['tmp'] + '°')
+      $('.qlty').html('空气质量: ' + data['HeWeather5'][0]['aqi']['city']['qlty'])
+      $('.wind').html(weatherBanner['wind']['dir'] + ' ' + weatherBanner['wind']['sc'] + '级')
 
 
       // 界面列表元素渲染
       var weatherList = data['HeWeather5'][0]['daily_forecast']
+      var weatherListHourly = data['HeWeather5'][0]['hourly_forecast']
       var days = ['今天', '明天', '后天']
       // 根据不同天气更换图标
-      var weatherClassList=[]
-      weatherClassList['多云']='iconfont icon-baitian-duoyun'
-      weatherClassList['晴']='iconfont icon-baitian-qing'
-      weatherClassList['阴']='iconfont icon-baitian-duoyun'
-      weatherClassList['阵雨']='iconfont icon-baitian-zhongyu'
+      var weatherClassList = []
+      weatherClassList['多云'] = 'iconfont icon-baitian-duoyun'
+      weatherClassList['晴'] = 'iconfont icon-baitian-qing'
+      weatherClassList['阴'] = 'iconfont icon-baitian-duoyun'
+      weatherClassList['阵雨'] = 'iconfont icon-baitian-zhongyu'
+      weatherClassList['小雨'] = 'iconfont icon-baitian-xiaoyu'
+      weatherClassList['中雨'] = 'iconfont icon-baitian-zhongyu'
+      weatherClassList['雷阵雨'] = 'iconfont icon-baitian-lei'
 
       // console.log(weatherClassList)
 
+      // 渲染小时天气-----------------------
+      weatherListHourly.forEach(function (item, index) {
+
+        var cond = item['cond']['txt']
+        var hourly=item['date'].split(' ')[1]
+
+
+        // for (var i = cond.length; i < 3; i++) {
+        //   cond += '&nbsp&nbsp&nbsp'
+        // }
+
+
+        var liTemp = $('<li><div class="list-week">\n' +
+          '        <span>' + hourly + '</span>\n' +
+          '      </div>\n' +
+          '      <div class="list-temp">\n' +
+          '        <span class="nums">' + item['tmp']+'°</span>\n' +
+          '        <span class="tianqi">' + cond + '</span><span class="' + weatherClassList[item['cond']['txt']] + '"></span>' +
+          '      </div></li>')
+
+        $tq_listHourly.append(liTemp)
+
+      })
+
+
+      // 渲染每日天气
       weatherList.forEach(function (item, index) {
 
-        var cond=item['cond']['txt_n']
+        var cond = item['cond']['txt_n']
 
-        if(item['cond']['txt_n']=='阴'){
-          cond='阴&nbsp&nbsp&nbsp'
+
+        for (var i = cond.length; i < 3; i++) {
+          cond += '&nbsp&nbsp&nbsp'
         }
 
+
+        console.log(cond.length)
 
 
         var liTemp = $('<li><div class="list-week">\n' +
@@ -108,14 +160,17 @@
           '      </div>\n' +
           '      <div class="list-temp">\n' +
           '        <span class="nums">' + item['tmp']['min'] + '~' + item['tmp']['max'] + '°</span>\n' +
-          '        <span class="tianqi">' + cond + '</span><span class="'+weatherClassList[item['cond']['txt_n']]+'"></span>' +
+          '        <span class="tianqi">' + cond + '</span><span class="' + weatherClassList[item['cond']['txt_n']] + '"></span>' +
           '      </div></li>')
 
         $tq_list.append(liTemp)
 
       })
 
+      $tq_listHourly.slideDown(600)
       $tq_list.slideDown(600)
+
+
 
     }
 
@@ -124,12 +179,12 @@
     function getWeatherData(cityName) {
 
       // 如果点击的是当前地区，不执行
-      if(cityName==$('.location').html().trim()){
+      if (cityName == $('.location').html().trim()) {
         console.log(0)
         return
       }
 
-      var url='https://free-api.heweather.com/v5/weather?city='+cityName+'&key=b7e13790348846feb206d08509a1d78b'
+      var url = 'https://free-api.heweather.com/v5/weather?city=' + cityName + '&key=b7e13790348846feb206d08509a1d78b'
       $.ajax({
         url: url,
         type: 'get',
@@ -137,7 +192,7 @@
         data: {},
         success: function (data) {
           setWeatherList(data)
-          setActivePoint()
+          // setActivePoint()
         },
         error: function (data) {
           alert('网太差了')
@@ -145,9 +200,9 @@
       })
     }
 
-    getWeatherData('天津')
+    getWeatherData('长春')
 
-    $('.addCity').delegate('a','click',function () {
+    $('.addCity').delegate('a', 'click', function () {
 
       getWeatherData($(this).html().trim())
     })
