@@ -5,11 +5,8 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="assert/plugins/css/bootstrap.min.css">
-  <!--<link rel="stylesheet" href="assert/plugins/css/animate.min.css">-->
   <link rel="stylesheet" href="assert/css/myWeather.css">
   <link rel="stylesheet" href="https://at.alicdn.com/t/font_832418_iig9uckp5ta.css">
-  <!--<script src="node_modules/vue/dist/vue.min.js"></script>-->
   <title>测试</title>
   <noscript>
     <p>这个浏览器不让用javascript，高级设置开一下</p>
@@ -37,28 +34,16 @@
 <div class="tq-list">
   <span class="active-point"></span>
 
-
   <div class="hourlyDiv">
-    <ul class="hourlyWeahter clearfix">
-
+    <ul class="hourlyWeahter">
     </ul>
   </div>
-
-
-
-
-
   <ul class="dailyWeather">
-
   </ul>
 </div>
 
 
 <script src="assert/plugins/js/jquery-1.12.4.min.js"></script>
-<!--<script src="assert/plugins/js/iscroll.js"></script>-->
-<!--<script src="assert/plugins/js/zeptp.js"></script>-->
-<!--<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>-->
-<!--<script src="assert/js/wow.min.js"></script>-->
 <script>
 
   // new IScroll(document.querySelector('#wrapper'));
@@ -84,15 +69,17 @@
     function setWeatherList(data) {
 
       // 刷新前--清空，初始化
-      $tq_list.css('display', 'none')
-      $tq_list.empty()
+      //小时别
       $tq_listHourly.css('display', 'none')
       $tq_listHourly.empty()
+      // 日别
+      $tq_list.css('display', 'none')
+      $tq_list.empty()
 
 
       //界面banner元素渲染
       var weatherBanner = data['HeWeather5'][0]['now']
-
+      //位置，实时天气，温度，空气质量，风
       $('.location').html(data['HeWeather5'][0]['basic']['city'])
       $('.main').html(weatherBanner['cond']['txt'])
       $('.temp').html(weatherBanner['tmp'] + '°')
@@ -100,9 +87,11 @@
       $('.wind').html(weatherBanner['wind']['dir'] + ' ' + weatherBanner['wind']['sc'] + '级')
 
 
+
       // 界面列表元素渲染
       var weatherList = data['HeWeather5'][0]['daily_forecast']
       var weatherListHourly = data['HeWeather5'][0]['hourly_forecast']
+
       var days = ['今天', '明天', '后天']
       // 根据不同天气更换图标
       var weatherClassList = []
@@ -114,30 +103,21 @@
       weatherClassList['中雨'] = 'iconfont icon-baitian-zhongyu'
       weatherClassList['雷阵雨'] = 'iconfont icon-baitian-lei'
 
-      // console.log(weatherClassList)
-
       // 渲染小时天气-----------------------
       weatherListHourly.forEach(function (item, index) {
 
-        var cond = item['cond']['txt']
+        //分割日期取出时间
         var hourly=item['date'].split(' ')[1]
-
-
-        // for (var i = cond.length; i < 3; i++) {
-        //   cond += '&nbsp&nbsp&nbsp'
-        // }
-
 
         var liTemp = $('<li><div class="list-week">\n' +
           '        <span>' + hourly + '</span>\n' +
           '      </div>\n' +
           '      <div class="list-temp">\n' +
           '        <span class="nums">' + item['tmp']+'°</span>\n' +
-          '        <span class="tianqi">' + cond + '</span><span class="' + weatherClassList[item['cond']['txt']] + '"></span>' +
+          '        <span class="tianqi">' + item['cond']['txt'] + '</span><span class="' + weatherClassList[item['cond']['txt']] + '"></span>' +
           '      </div></li>')
 
         $tq_listHourly.append(liTemp)
-
       })
 
 
@@ -145,15 +125,10 @@
       weatherList.forEach(function (item, index) {
 
         var cond = item['cond']['txt_n']
-
-
+        // 判断不同字长加空格对齐
         for (var i = cond.length; i < 3; i++) {
           cond += '&nbsp&nbsp&nbsp'
         }
-
-
-        console.log(cond.length)
-
 
         var liTemp = $('<li><div class="list-week">\n' +
           '        <span class="">' + days[index] + '</span>\n' +
@@ -169,9 +144,6 @@
 
       $tq_listHourly.slideDown(600)
       $tq_list.slideDown(600)
-
-
-
     }
 
 
@@ -200,7 +172,7 @@
       })
     }
 
-    getWeatherData('长春')
+    getWeatherData('天津')
 
     $('.addCity').delegate('a', 'click', function () {
 

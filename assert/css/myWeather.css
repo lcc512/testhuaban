@@ -1,3 +1,32 @@
+/* 清除内外边距 */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+fieldset,
+lengend,
+button,
+input,
+textarea,
+th,
+td {
+  /* table elements 表格元素 */
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: "Microsoft YaHei UI", sans-serif;
   width: 100%;
@@ -34,6 +63,7 @@ body {
   height: 44px;
   border-radius: 100%;
   border: 1px solid #ccc;
+  margin-bottom: 10px;
   line-height: 44px;
   color: #fff;
   transition: 0.2s all;
