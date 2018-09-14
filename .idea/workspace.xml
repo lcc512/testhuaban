@@ -1,24 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a639df00-a585-4ec4-aec0-ce559f8befe1" name="Default" comment="1，测试更新缓存功能">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="a639df00-a585-4ec4-aec0-ce559f8befe1" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assert/css/myWeather.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assert/css/myWeather.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assert/css/myWeather.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assert/css/rili.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assert/css/rili.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assert/css/rili.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assert/images/bacc.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assert/images/weatherback.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assert/plugins/css/bootstrap-theme.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assert/plugins/css/bootstrap-theme.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assert/plugins/css/bootstrap-theme.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assert/plugins/css/bootstrap-theme.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myWeather.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rili.html" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -35,8 +19,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+            <state relative-caret-position="175">
+              <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -47,6 +31,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Less File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -62,6 +48,8 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/assert/css/myWeather.less" />
         <option value="$PROJECT_DIR$/myWeather.html" />
+        <option value="$PROJECT_DIR$/index.less" />
+        <option value="$PROJECT_DIR$/assert/index.js" />
         <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
@@ -107,6 +95,11 @@
               <item name="testhuaban" type="b2602c69:ProjectViewProjectNode" />
               <item name="testhuaban" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="testhuaban" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testhuaban" type="462c0819:PsiDirectoryNode" />
+              <item name="assert" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -117,7 +110,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../personalWeb" />
     <property name="list.type.of.created.stylesheet" value="Less" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -125,6 +118,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\020202\testhuaban\assert" />
       <recent name="E:\newWeb" />
     </key>
   </component>
@@ -179,7 +173,7 @@
       <workItem from="1536718244670" duration="341000" />
       <workItem from="1536718607698" duration="7643000" />
       <workItem from="1536742251102" duration="436000" />
-      <workItem from="1536886965524" duration="278000" />
+      <workItem from="1536886965524" duration="2235000" />
     </task>
     <task id="LOCAL-00001" summary="缩小banner高度">
       <created>1536626513063</created>
@@ -244,11 +238,18 @@
       <option name="project" value="LOCAL" />
       <updated>1536742641959</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="1，初始化项目">
+      <created>1536887461945</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1536887461945</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17765000" />
+    <option name="totallyTimeSpent" value="19722000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="583" y="0" width="1024" height="867" extended-state="0" />
@@ -287,7 +288,8 @@
     <MESSAGE value="1.加上了每小时天气" />
     <MESSAGE value="1，整理代码，去除多余引用，去除bootstrape引用，做了相应调整" />
     <MESSAGE value="1，测试更新缓存功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="1，测试更新缓存功能" />
+    <MESSAGE value="1，初始化项目" />
+    <option name="LAST_COMMIT_MESSAGE" value="1，初始化项目" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/myWeather.html" />
@@ -399,10 +401,16 @@
     <entry file="file://$PROJECT_DIR$/assert/css/myWeather.css" />
     <entry file="file://$PROJECT_DIR$/assert/css/myWeather.less" />
     <entry file="file://$PROJECT_DIR$/myWeather.html" />
+    <entry file="file://$PROJECT_DIR$/assert/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assert/index.less">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+        <state relative-caret-position="175">
+          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
         </state>
       </provider>
     </entry>
