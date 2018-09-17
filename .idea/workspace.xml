@@ -7,7 +7,6 @@
       <change beforePath="$PROJECT_DIR$/assert/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/assert/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assert/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assert/index.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assert/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/assert/index.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,11 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
-              <caret line="63" column="12" lean-forward="true" selection-start-line="63" selection-start-column="12" selection-end-line="63" selection-end-column="12" />
+            <state relative-caret-position="400">
+              <caret line="72" column="12" lean-forward="true" selection-start-line="72" selection-start-column="12" selection-end-line="72" selection-end-column="12" />
               <folding>
                 <element signature="n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
               </folding>
@@ -33,16 +32,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.less" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.less" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assert/index.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
-              <caret line="191" column="9" lean-forward="true" selection-start-line="191" selection-start-column="9" selection-end-line="191" selection-end-column="9" />
+            <state relative-caret-position="300">
+              <caret line="227" column="20" lean-forward="true" selection-start-line="227" selection-start-column="20" selection-end-line="227" selection-end-column="20" />
               <folding>
-                <element signature="e#281#1233#0" />
                 <element signature="e#429#1228#0" />
                 <element signature="e#546#1191#0" />
                 <element signature="e#700#1173#0" />
+                <element signature="e#2895#3468#0" />
               </folding>
             </state>
           </provider>
@@ -73,8 +72,8 @@
         <option value="$PROJECT_DIR$/index.less" />
         <option value="$PROJECT_DIR$/assert/index.js" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/assert/index.less" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/assert/index.less" />
       </list>
     </option>
   </component>
@@ -98,7 +97,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="793" />
     <option name="width" value="814" />
     <option name="height" value="867" />
@@ -111,6 +110,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -127,7 +127,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -204,7 +203,7 @@
       <workItem from="1536886965524" duration="2235000" />
       <workItem from="1536889515960" duration="1139000" />
       <workItem from="1537146192663" duration="3826000" />
-      <workItem from="1537150047580" duration="7780000" />
+      <workItem from="1537150047580" duration="9195000" />
     </task>
     <task id="LOCAL-00001" summary="缩小banner高度">
       <created>1536626513063</created>
@@ -287,7 +286,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32467000" />
+    <option name="totallyTimeSpent" value="33882000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="793" y="0" width="814" height="867" extended-state="0" />
@@ -345,10 +344,10 @@
         <state relative-caret-position="75">
           <caret line="3" column="12" lean-forward="true" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
           <folding>
-            <element signature="e#281#1233#0" />
             <element signature="e#429#1228#0" />
             <element signature="e#546#1191#0" />
             <element signature="e#700#1173#0" />
+            <element signature="e#2895#3468#0" />
           </folding>
         </state>
       </provider>
@@ -487,25 +486,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assert/index.less">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="191" column="9" lean-forward="true" selection-start-line="191" selection-start-column="9" selection-end-line="191" selection-end-column="9" />
+        <state relative-caret-position="400">
+          <caret line="72" column="12" lean-forward="true" selection-start-line="72" selection-start-column="12" selection-end-line="72" selection-end-column="12" />
           <folding>
-            <element signature="e#281#1233#0" />
-            <element signature="e#429#1228#0" />
-            <element signature="e#546#1191#0" />
-            <element signature="e#700#1173#0" />
+            <element signature="n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/assert/index.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="63" column="12" lean-forward="true" selection-start-line="63" selection-start-column="12" selection-end-line="63" selection-end-column="12" />
+        <state relative-caret-position="300">
+          <caret line="227" column="20" lean-forward="true" selection-start-line="227" selection-start-column="20" selection-end-line="227" selection-end-column="20" />
           <folding>
-            <element signature="n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#429#1228#0" />
+            <element signature="e#546#1191#0" />
+            <element signature="e#700#1173#0" />
+            <element signature="e#2895#3468#0" />
           </folding>
         </state>
       </provider>
