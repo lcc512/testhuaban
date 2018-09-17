@@ -1,0 +1,211 @@
+@activeColor: #c90000;
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  display: block;
+  clear: both;
+  content: "";
+  visibility: hidden;
+  height: 0;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+//撑开页面高度
+html, body {
+
+  height: 100%;
+  width: 100%;
+  font-family: "Microsoft YaHei UI";
+}
+
+a {
+  text-decoration: none;
+}
+
+.page {
+  width: 100%;
+  padding-top: 48px;
+
+  //头部
+  .header {
+    width: 100%;
+    height: 48px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+
+    box-shadow: 0 3px 3px #ccc;
+
+    .headerIn {
+      height: 100%;
+      width: 1000px;
+      //background-color: #5bc0de;
+      margin: 0 auto;
+      .headerLeft {
+        //background-color: #5bc0de;
+        float: left;
+        width: 375px;
+        height: 28px;
+        margin-top: 10px;
+        ul {
+          li {
+            float: left;
+            margin-right: 20px;
+
+            a {
+              display: inline-block;
+              line-height: 28px;
+              text-align: center;
+              font-size: 14px;
+              &:hover {
+                color: @activeColor;
+              }
+            }
+
+            .new_tip {
+              width: 30px;
+              height: 14px;
+              line-height: 14px;
+              margin-top: 8px;
+              margin-left: 2px;
+              display: inline-block;
+              font-size: 12px;
+              background-color: orange;
+              color: #fff;
+            }
+
+            &:nth-child(7) {
+              a {
+                font-size: 40px;
+                line-height: 2px;
+              }
+            }
+          }
+
+          .logoPic {
+            a {
+              width: 28px;
+              height: 28px;
+              display: inline-block;
+              background: url("images/logo.jpg") no-repeat center;
+              background-size: contain;
+            }
+          }
+        }
+      }
+
+      .headerCenter {
+        float: left;
+        width: 475px;
+        height: 34px;
+        margin-top: 7px;
+        input {
+          width: 100%;
+          height: 100%;
+          padding: 10px;
+          outline: none;
+          background-color: #fafafa;
+          border: 1px solid #ccc;
+          font-size: 14px;
+          font-family: "Microsoft YaHei UI";
+        }
+      }
+
+      .headerRight {
+        float: right;
+        //background-color: #5bc0de;
+        width: 116px;
+        height: 48px;
+        a {
+          float: right;
+          width: 52px;
+          height: 32px;
+          line-height: 32px;
+          display: inline-block;
+          text-align: center;
+          text-decoration: none;
+          margin-top: 8px;
+          border: 1px solid #ccc;
+          margin-right: 5px;
+          font-size: 12px;
+          &.login {
+            background-color: orangered;
+            color: #fff;
+          }
+        }
+
+      }
+    }
+
+  }
+
+  //轮播图
+  .slideBanner {
+    width: 100%;
+    height: 60px;
+    background-color: #5bc0de;
+    ul {
+      width: 100%;
+      height: 60px;
+      position: relative;
+      li {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 1;
+        transition: 1s all;
+
+        a {
+          display: inline-block;
+          width: 100%;
+          height: 100%;
+        }
+
+        &:nth-child(1) a {
+          background: url("images/9.jpg") no-repeat center;
+          background-size: cover;
+        }
+        &:nth-child(2) a {
+          background: url("images/12.jpg") no-repeat center;
+          background-size: cover;
+        }
+        &:nth-child(3) a {
+          background: url("images/13.jpg") no-repeat center;
+          background-size: cover;
+        }
+        &:nth-child(4) a {
+          background: url("images/14.jpg") no-repeat center;
+          background-size: cover;
+        }
+        &:nth-child(5) a {
+          background: url("images/11.jpg") no-repeat center;
+          background-size: cover;
+        }
+        &:nth-child(6) a {
+          background: url("images/10.jpg") no-repeat center;
+          background-size: cover;
+        }
+        &:nth-child(7) a {
+          background: url("images/15.jpg") no-repeat center;
+          background-size: cover;
+        }
+
+      }
+    }
+
+  }
+}
+

@@ -5,7 +5,7 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="assert/plugins/css/bootstrap.min.css">
+  <!--<link rel="stylesheet" href="assert/plugins/css/bootstrap.min.css">-->
   <link rel="stylesheet" href="assert/index.css">
   <title>主页</title>
   <style>
@@ -14,14 +14,105 @@
   </style>
 </head>
 <body>
-
-
-
+<!--里面放标准流的元素-->
+<div class="page">
+  <!--头部-->
+  <header class="header">
+    <div class="headerIn">
+      <div class="headerLeft">
+        <ul>
+          <li class="logoPic"><a href=""></a></li>
+          <li><a href="">发现</a></li>
+          <li><a href="">最新</a></li>
+          <li><a href="">美思</a></li>
+          <li><a href="">活动<span class="new_tip">new</span></a></li>
+          <li><a href="">教育</a></li>
+          <li><a href="">...</a></li>
+        </ul>
+      </div>
+      <div class="headerCenter">
+        <input type="text" id="query" name="query" placeholder="搜索你喜欢的">
+      </div>
+      <div class="headerRight">
+        <a href="" class="register">
+          <span>注册</span>
+        </a>
+        <a href="" class="login">
+          <span>登录</span>
+        </a>
+      </div>
+    </div>
+  </header>
+  <!--轮播图-->
+  <section class="slideBanner">
+    <ul>
+      <li><a href="">0</a></li>
+      <li><a href="">1</a></li>
+      <li><a href="">2</a></li>
+      <li><a href="">3</a></li>
+      <li><a href="">4</a></li>
+      <li><a href="">5</a></li>
+      <li><a href="">6</a></li>
+    </ul>
+  </section>
+  <!--快速登录-->
+  <section class="quickLogin">
+    <div class="quickLoginIn">
+      <div class="intro">
+        <p>国内最优质的图片灵感库</p>
+        <p>已有数百万出众网友，用花瓣保存喜欢的而图片</p>
+      </div>
+      <div class="loginIcon">
+        <ul>
+          <li><a href=""><span></span></a></li>
+          <li><a href=""><span></span></a></li>
+          <li><a href=""><span></span></a></li>
+          <li><a href=""><span></span></a></li>
+        </ul>
+        <p>-- 用以上社交账号快速登录 --</p>
+      </div>
+    </div>
+  </section>
+  <!--吸顶效果-->
+  <section class="topNav"></section>
+  <!--选项卡-->
+  <div class="tapItem"></div>
+</div>
+<!--放页面浮动的元素-->
+<!--右边浮动按钮-->
+<div class="elevatorItem"></div>
+<!--登录面板,背景遮罩-->
+<div class="mask"></div>
 
 
 <script src="assert/plugins/js/jquery-1.12.4.min.js"></script>
 <script src="assert/index.js"></script>
+<script>
 
+  function doit(){
+
+    var index=0
+
+    return function(){
+      $('.slideBanner li').css('opacity','0')
+
+      $($('.slideBanner li')[index]).css('opacity','1');
+
+      index++
+
+      if(index>6){
+        index=0
+      }
+      
+      console.log(index)
+    }
+
+  }
+
+
+
+
+</script>
 
 </body>
 </html>
