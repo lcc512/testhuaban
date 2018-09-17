@@ -1,4 +1,8 @@
-* {
+body,
+p,
+input,
+ul,
+a {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -27,10 +31,12 @@ a {
 .page {
   width: 100%;
   padding-top: 48px;
+  height: 2000px;
 }
 .page .header {
   width: 100%;
   height: 48px;
+  background-color: #fff;
   position: fixed;
   left: 0;
   top: 0;
@@ -207,5 +213,107 @@ a {
   display: inline-block;
   background: url("images/logo.jpg") no-repeat center;
   background-size: cover;
+  margin-right: 10px;
+}
+.page .quickLogin .quickLoginIn .loginIcon p {
+  padding-top: 5px;
+  font-size: 12px;
+  text-align: center;
+}
+.page .topNav {
+  width: 100%;
+  height: 80px;
+  background-color: #000000;
+  opacity: 0.5;
+  color: #fff;
+  position: fixed;
+  left: 0;
+  top: 48px;
+  z-index: 999;
+  display: none;
+}
+.page .topNav .topNavIn {
+  height: 100%;
+  width: 1000px;
+  margin: 0 auto;
+}
+.page .topNav .topNavIn .intro {
+  float: left;
+  padding-top: 10px;
+}
+.page .topNav .topNavIn .intro p {
+  text-align: left;
+}
+.page .topNav .topNavIn .intro p:nth-child(1) {
+  font-weight: bolder;
+  font-size: 28px;
+}
+.page .topNav .topNavIn .loginIcon {
+  float: right;
+}
+.page .topNav .topNavIn .loginIcon ul {
+  float: left;
+  padding-top: 15px;
+  padding-left: 20px;
+}
+.page .topNav .topNavIn .loginIcon ul li {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  display: inline-block;
+  background: url("images/logo.jpg") no-repeat center;
+  background-size: cover;
+  margin-right: 10px;
+}
+.page .topNav .topNavIn .loginIcon p {
+  float: left;
+  padding-top: 5px;
+  font-size: 12px;
+  line-height: 80px;
+}
+.page .typeTitle {
+  width: 100%;
+  height: 130px;
+}
+.page .typeTitle .typeTitleIn {
+  height: 100%;
+  padding: 20px;
+  text-align: center;
+  font-size: 36px;
+  line-height: 2;
+}
+.page .tapMain {
+  width: 100%;
+}
+.page .tapMain .tapTitle {
+  width: 300px;
+  height: 48px;
+  margin: 0 auto;
+}
+.page .tapMain .tapTitle ul li {
+  float: left;
+  width: 100px;
+  text-align: center;
+  line-height: 47x;
+  cursor: pointer;
+}
+.page .tapMain .tapTitle ul li.current {
+  border-bottom: 1px solid orangered;
+  color: orangered;
+}
+.page .tapMain .tapContent {
+  width: 100%;
+}
+.page .tapMain .tapContent .dom {
+  display: none;
+}
+.page .tapMain .tapContent .dom:nth-child(1) {
+  background-color: #5bc0de;
+}
+.page .tapMain .tapContent .dom:nth-child(2) {
+  background-color: green;
+}
+.page .tapMain .tapContent .dom:nth-child(3) {
+  background-color: yellow;
 }
 /*# sourceMappingURL=index.css.map */

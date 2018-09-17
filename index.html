@@ -74,9 +74,44 @@
     </div>
   </section>
   <!--吸顶效果-->
-  <section class="topNav"></section>
+  <section class="topNav">
+    <div class="topNavIn">
+      <div class="intro">
+        <p>国内最优质的图片灵感库</p>
+        <p>已有数百万出众网友，用花瓣保存喜欢的而图片</p>
+      </div>
+      <div class="loginIcon">
+        <p>用以上社交账号快速登录</p>
+        <ul>
+          <li><a href=""><span></span></a></li>
+          <li><a href=""><span></span></a></li>
+          <li><a href=""><span></span></a></li>
+          <li><a href=""><span></span></a></li>
+        </ul>
+
+      </div>
+    </div>
+  </section>
+  <div class="typeTitle">
+    <div class="typeTitleIn">
+      -- 美图 --
+    </div>
+  </div>
   <!--选项卡-->
-  <div class="tapItem"></div>
+  <div class="tapMain">
+    <div class="tapTitle">
+      <ul>
+        <li class="current">采集</li>
+        <li>推荐画板</li>
+        <li>推荐用户</li>
+      </ul>
+    </div>
+    <div class="tapContent">
+      <div class="dom" style="display: block">111111111</div>
+      <div class="dom">22222222222</div>
+      <div class="dom">3333333333</div>
+    </div>
+  </div>
 </div>
 <!--放页面浮动的元素-->
 <!--右边浮动按钮-->
@@ -87,32 +122,6 @@
 
 <script src="assert/plugins/js/jquery-1.12.4.min.js"></script>
 <script src="assert/index.js"></script>
-<script>
-
-  function doit(){
-
-    var index=0
-
-    return function(){
-      $('.slideBanner li').css('opacity','0')
-
-      $($('.slideBanner li')[index]).css('opacity','1');
-
-      index++
-
-      if(index>6){
-        index=0
-      }
-      
-      console.log(index)
-    }
-
-  }
-
-
-
-
-</script>
 
 </body>
 </html>

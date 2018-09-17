@@ -1,6 +1,6 @@
 @activeColor: #c90000;
 
-* {
+body,p,input,ul,a{
   margin: 0;
   padding: 0;
   list-style: none;
@@ -35,11 +35,15 @@ a {
 .page {
   width: 100%;
   padding-top: 48px;
+  height: 2000px;
+  //background: url("images/page.jpg") no-repeat center;
+  //background-size: cover;
 
   //头部
   .header {
     width: 100%;
     height: 48px;
+    background-color: #fff;
     position: fixed;
     left: 0;
     top: 0;
@@ -50,7 +54,6 @@ a {
     .headerIn {
       height: 100%;
       width: 1000px;
-      //background-color: #5bc0de;
       margin: 0 auto;
       .headerLeft {
         //background-color: #5bc0de;
@@ -208,9 +211,8 @@ a {
 
   }
 
-
   //快速登录
-  .quickLogin{
+  .quickLogin {
 
     width: 100%;
     height: 120px;
@@ -218,38 +220,166 @@ a {
     background-size: cover;
     color: #fff;
 
-    .quickLoginIn{
+    .quickLoginIn {
 
       height: 100%;
       width: 1000px;
       //background-color: #5bc0de;
       margin: 0 auto;
-      .intro{
+      .intro {
         float: left;
         padding-top: 30px;
-        p{
+        p {
           text-align: left;
-          &:nth-child(1){
+          &:nth-child(1) {
             font-weight: bolder;
             font-size: 28px;
           }
         }
       }
-      .loginIcon{
+      .loginIcon {
         float: right;
         padding-top: 30px;
 
-        li{
+        li {
           width: 50px;
           height: 50px;
           border-radius: 100%;
           display: inline-block;
           background: url("images/logo.jpg") no-repeat center;
           background-size: cover;
+          margin-right: 10px;
 
+        }
+        p {
+          padding-top: 5px;
+          font-size: 12px;
+          text-align: center;
         }
       }
     }
+  }
+
+  //快速登录的吸顶效果
+  .topNav {
+
+    width: 100%;
+    height: 80px;
+    background-color: #000000;
+    opacity: 0.5;
+    color: #fff;
+
+    position: fixed;
+    left: 0;
+    top: 48px;
+    z-index: 999;
+    display: none;
+
+    .topNavIn {
+
+      height: 100%;
+      width: 1000px;
+      //background-color: #5bc0de;
+      margin: 0 auto;
+      .intro {
+        float: left;
+        padding-top: 10px;
+        p {
+          text-align: left;
+          &:nth-child(1) {
+            font-weight: bolder;
+            font-size: 28px;
+          }
+        }
+      }
+      .loginIcon {
+        float: right;
+
+        ul {
+          float: left;
+          padding-top: 15px;
+          padding-left: 20px;
+          li {
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            display: inline-block;
+            background: url("images/logo.jpg") no-repeat center;
+            background-size: cover;
+            margin-right: 10px;
+
+          }
+        }
+
+        p {
+          float: left;
+          padding-top: 5px;
+          font-size: 12px;
+          line-height: 80px;
+        }
+      }
+    }
+  }
+
+  //类型标题
+  .typeTitle {
+    width: 100%;
+    height: 130px;
+    .typeTitleIn {
+
+      //background-color: #5bc0de;
+      height: 100%;
+      padding: 20px;
+      text-align: center;
+      font-size: 36px;
+      line-height: 2;
+
+    }
+  }
+
+  //选项卡
+  .tapMain {
+    width: 100%;
+
+    .tapTitle{
+      width: 300px;
+      height: 48px;
+      //background-color: #5bc0de;
+      margin: 0 auto;
+      ul{
+        li{
+          float: left;
+          width: 100px;
+          text-align: center;
+          line-height: 47x;
+          cursor: pointer;
+          &.current{
+            border-bottom: 1px solid orangered;
+            color: orangered;
+          }
+        }
+      }
+    }
+
+    .tapContent{
+      width: 100%;
+
+
+      .dom{
+        display: none;
+
+        &:nth-child(1){
+          background-color: #5bc0de;
+        }
+        &:nth-child(2){
+          background-color: green;
+        }
+        &:nth-child(3){
+          background-color: yellow;
+        }
+      }
+    }
+
   }
 }
 
